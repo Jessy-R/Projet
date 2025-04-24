@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "partenaires.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>   
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+
+    <h5>Partenaires de DDN</h5>
+    <div class="gauche">
+        <h2>Ducati Seclin</h2>
+        <a target="_blank" href="https://www.ducati.com/fr/fr/dealers/seclin/desmo-land"><img class="imgD" src="img_partenaires/ducati.png"/></a>
+        <p>adresse : Boulevard de la Moto- Zac de l’Epinette, 59113 Seclin 59</p>
+        <p>numéro : 03 28 16 24 61</p>
+        <p>Email : <a id="mail-partenaire" href="mailto:beranger.motosport@orange.fr">beranger.motosport@orange.fr</a></p>
+        <a target="_blank" href="https://www.facebook.com/Desmoland/?locale=fr_FR"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+    <div class="droite">
+        <h4>Motosport Lambres</h4>
+        <p>adresse : 28 route départementale 943, 62120 LAMBRES LEZ AIRES</p>
+        <p>numéro : 03 91 92 86 79</p>
+        <p>Email : <a id="mail-partenaire" href="mailto:m.meurisse@simaris.fr">m.meurisse@simaris.fr</a></p>
+        <a target="_blank" href="https://www.facebook.com/p/Motosport-Lambres-100063596941502/"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+    <div class="gauche2">
+        <h2>Via Motori</h2>
+        <a target="_blank" href="https://www.vente-reparation-moto-bauvin.fr/contact"><img class="imgD2" src="img_partenaires/motori.jpg"/></a>
+        <p>adresse : 64 rue de la gare 59221 Bauvin</p>
+        <p>numéro : 07 62 56 69 69</p>
+        <p>Email : <a id="mail-partenaire" href="mailto:beranger.motosport@orange.fr">viamotori@live.fr</a></p>
+        <a target="_blank" href="https://www.facebook.com/via.motori.7"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+    <div class="droite2">
+        <h4>Delerue</h4>
+        <a target="_blank" href="https://www.delerue-motos.fr/"><img class="imgD2" src="img_partenaires/delerue.png"/></a>
+        <p>adresse : 270 RUE SADI CARNOT / 62221 NOYELLES-SOUS-LENS</p>
+        <p>numéro : 03 21 49 10 11</p>
+        <p>Email : <a id="mail-partenaire" href="mailto:m.meurisse@simaris.fr">bertrand@delerue-motos.fr</a></p>
+        <a target="_blank" href="https://www.facebook.com/delerue.lexperience.moto"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+    <div class="gauche3">
+        <h2>Bobby Bike</h2>
+        <a target="_blank" href="https://www.bobbybike.fr/"><img id="imgD4" src="img_partenaires/booby.png"/></a>
+        <p>adresse : 64 Q, rue Crèvecoeur, 59400 Cambrai</p>
+        <p>numéro : 06 32 36 07 79</p>
+        <a target="_blank" href="https://www.facebook.com/bobbybike59400"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+    <div class="droite3">
+        <h4>FRAKA Motors</h4>
+        <a target="_blank" href="https://ducatbykaren.wordpress.com/"><img class="imgD3" src="img_partenaires/karen.webp"/></a>
+        <p>adresse : 14 Rte des Refoux, 49610 Saint-Melaine-sur-Aubance</p>
+        <p>numéro : 02 41 37 03 56</p>
+        <p>Facebook ducat by karen : <a target="_blank" href="https://www.facebook.com/ducatbykaren/?locale=fr_FR">facebook.com/FrakaMotors/?locale=fr_FR</a></p>
+        <a target="_blank" href="https://www.facebook.com/delerue.lexperience.moto"><img class="imgFb" src="Image/facebookB.png"/></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></p> 
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

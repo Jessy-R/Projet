@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "évènements24.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>    
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+
+    <h5>Événements de l'année 2023</h5>
+    <h6>Balade du 24 Septembre</h6>
+    <a target="_blank" href="img_évènement23/parcoursS1.png"><img class="img3" src="img_évènement23/parcoursS1.png"/></a><a target="_blank" href="img_évènement23/imgS1.jpg"><img class="img3" src="img_évènement23/imgS1.jpg"/></a><a target="_blank" href="img_évènement23/imgS2.jpg"><img class="img3" src="img_évènement23/imgS2.jpg"/></a>
+    <a target="_blank" href="img_évènement23/imgS3.jpg"><img class="img3b" src="img_évènement23/imgS3.jpg"/></a><a target="_blank" href="img_évènement23/imgS4.jpg"><img class="img3b" src="img_évènement23/imgS4.jpg"/></a><a target="_blank" href="img_évènement23/imgS5.jpg"><img class="img3b" src="img_évènement23/imgS5.jpg"/></a>
+    
+    <h2>Les 10 ans de DDN le 25 Juin</h2>
+    <a target="_blank" href="img_évènement23/parcoursJ.png"><img class="img3" src="img_évènement23/parcoursJ.png"/></a><a target="_blank" href="img_évènement23/imgJ1.jpg"><img class="img3" src="img_évènement23/imgJ1.jpg"/></a><a target="_blank" href="img_évènement23/imgJ2.jpg"><img class="img3" src="img_évènement23/imgJ2.jpg"/></a>
+    <a target="_blank" href="img_évènement23/imgJ3.jpg"><img class="img3b" src="img_évènement23/imgJ3.jpg"/></a><a target="_blank" href="img_évènement23/imgJ4.jpg"><img class="img3b" src="img_évènement23/imgJ4.jpg"/></a><a target="_blank" href="img_évènement23/imgJ5.jpg"><img class="img3b" src="img_évènement23/imgJ5.jpg"/></a>
+    
+    <h2>Balade du 21 Mai</h2>
+    <a target="_blank" href="img_évènement23/parcoursM.jpg"><img class="img3" src="img_évènement23/parcoursM.jpg"/></a><a target="_blank" href="img_évènement23/file.jpg"><img class="img3" src="img_évènement23/file.jpg"/></a><a target="_blank" href="img_évènement23/imgM2.jpg"><img class="img3" src="img_évènement23/imgM2.jpg"/></a>
+    <a target="_blank" href="img_évènement23/imgM3.jpg"><img class="img3b" src="img_évènement23/imgM3.jpg"/></a><a target="_blank" href="img_évènement23/imgM4.jpg"><img class="img3b" src="img_évènement23/imgM4.jpg"/></a><a target="_blank" href="img_évènement23/imgM5.jpg"><img class="img3b" src="img_évènement23/imgM5.jpg"/></a>
+    
+    <h2>Balade du 30 Avril</h2>
+    <a target="_blank" href="img_évènement23/parcoursA.jpg"><img class="img3" src="img_évènement23/parcoursA.jpg"/></a><a target="_blank" href="img_évènement23/imgA1.jpg"><img class="img3" src="img_évènement23/imgA1.jpg"/></a><a target="_blank" href="img_évènement23/imgA2.jpg"><img class="img3" src="img_évènement23/imgA2.jpg"/></a>
+    <a target="_blank" href="img_évènement23/imgA3.jpg"><img class="img3b" src="img_évènement23/imgA3.jpg"/></a><a target="_blank" href="img_évènement23/imgA4.jpg"><img class="img3b" src="img_évènement23/imgA4.jpg"/></a><a target="_blank" href="img_évènement23/imgA5.jpg"><img class="img3b" src="img_évènement23/imgA5.jpg"/></a>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,701 @@
+body { margin:0; padding: 0}
+
+body{
+    width: 100%;
+    background-color: #f7d2d2;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(105, 103, 103);
+}
+
+a:hover{
+    color: #ee2d2d;
+}
+
+#mail{
+    text-decoration: none;
+    color: white;
+}
+
+#mail:hover{
+    color: #ee2d2d;
+}
+
+#mail-partenaire{
+    text-decoration: none;
+    color: black;
+}
+
+#mail-partenaire:hover{
+    color: #ee1c1c;
+}
+
+
+h5 {
+    color: #861111;
+    font-size: 3vw;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gauche p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.droite p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.gauche2 p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.droite2 p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.gauche3 p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.droite3 p{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+}
+
+.gauche {
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.gauche:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(Image/photo-annonce-ducati-panigale-959_6660788dd1688914595611.jpg);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.gauche:hover p{
+    color: white;
+}
+
+.gauche:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.gauche:hover a:hover{
+    color: #ee2d2d;
+}
+
+.gauche:hover #mail-partenaire{
+    color: white;
+}
+
+.gauche:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.gauche img {
+    margin-top: 4%;
+}
+
+.gauche .imgFb {
+    margin-top: 7%;
+}
+
+.gauche2 {
+    float: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.gauche2:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(img_partenaires/motoriB.jpeg);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.gauche2:hover p{
+    color: white;
+}
+
+.gauche2:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.gauche2:hover a:hover{
+    color: #ee2d2d;
+}
+
+.gauche2:hover #mail-partenaire{
+    color: white;
+}
+
+.gauche2:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.gauche2 img {
+    margin-top: 5%;
+}
+
+.gauche2 .imgFb {
+    margin-top: 6%;
+}
+
+.gauche3 {
+    float: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.gauche3:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(img_partenaires/boobyB.png);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.gauche3:hover p{
+    color: white;
+}
+
+.gauche3:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.gauche3:hover a:hover{
+    color: #ee2d2d;
+}
+
+.gauche3:hover #mail-partenaire{
+    color: white;
+}
+
+.gauche3:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.gauche3 #imgD4 {
+    margin-top: 8%;
+    padding-bottom: 1.2vw;
+}
+
+.gauche3 .imgFb {
+    margin-top: 5%;
+}
+
+
+.droite {
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.droite:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(Image/motosport\ pub\ 2022.jpg);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.droite:hover p{
+    color: white;
+}
+
+.droite:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.droite:hover a:hover{
+    color: #ee2d2d;
+}
+
+.droite:hover #mail-partenaire{
+    color: white;
+}
+
+.droite:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.droite .imgFb {
+    margin-top: 19%;
+}
+
+.droite2 {
+    float: right;
+    margin-right: 10%;
+    margin-top: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.droite2:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(img_partenaires/delerueB.jpg);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.droite2:hover p{
+    color: white;
+}
+
+.droite2:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.droite2:hover a:hover{
+    color: #ee2d2d;
+}
+
+.droite2:hover #mail-partenaire{
+    color: white;
+}
+
+.droite2:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.droite2 .imgFb {
+    margin-top: 6%;
+}
+
+.droite3 {
+    float: right;
+    margin-right: 10%;
+    margin-top: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f1d1;
+    border-radius: 6%;
+    width: 37%;
+    height: 25vw;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.droite3:hover{
+    background: linear-gradient(45deg,
+                                rgba(133,135,139,0.7) 0%,
+                                rgba(133,135,139,0.7) 100%),
+                                url(img_partenaires/karenB.png);
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.droite3:hover p{
+    color: white;
+}
+
+.droite3:hover a{
+    color: rgb(228, 219, 219);
+}
+
+.droite3:hover a:hover{
+    color: #ee2d2d;
+}
+
+.droite3:hover #mail-partenaire{
+    color: white;
+}
+
+.droite3:hover #mail-partenaire:hover{
+    color: #ee2d2d;
+}
+
+.imgFb {
+    width: 12%;
+    height: 3.75vw;
+    margin-left: 45%;
+    border-radius: 4px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imgFb:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.imgD {
+    width: 10%;
+    height: 3.75vw;
+    margin-left: 45%;
+    border-radius: 4px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imgD:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.imgD2 {
+    width: 19%;
+    height: 3.75vw;
+    margin-left: 41%;
+    border-radius: 4px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imgD2:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.imgD3 {
+    width: 19%;
+    height: 6vw;
+    margin-left: 41%;
+    border-radius: 4px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imgD3:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#imgD4 {
+    width: 19%;
+    height: 4vw;
+    margin-left: 41%;
+    border-radius: 4px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#imgD4:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+:root {
+    --color-primary: #ac3636;
+    --color-primary-dark: #005472;
+    --color-primary-dark-2: #004159;
+
+    --color-white: #eee;
+    --color-black: #0f0f0f;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 0%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(236, 38, 38), rgb(248, 86, 86));
+    position: relative;
+}
+.image{
+    position: relative;
+    float: right;
+    min-width: 5%;
+    width: 7%;
+    height: 6vw;
+    margin-right: 4%;
+}
+.logo{
+    color: rgb(22, 22, 22);
+    font-size: 4vw;
+    font-family: Jazz LET, fantasy;
+    float: left;
+    text-align: center;
+}
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.toggle-button .bar{
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding: 20px 50px;
+}
+.nav-links li{
+    margin-right: 25px;
+}
+.nav-links li a{
+    padding: 0 10px;
+    text-decoration: none; 
+    font-size: 1vw;
+    text-transform: capitalize;
+    color: #eee;
+    border-radius: 4vw;
+    background-color: #ac3636;
+    border: 0.2vw solid transparent;
+}
+.nav-links li a:hover{
+    color: #f8d5e2;
+    border: 0.2vw solid #ac3636;
+    background-color: #991010;
+}
+.sous{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    margin-top: 0.15%;
+}
+.sous.active{
+    display: block;
+}
+
+.sous li{
+    margin-top: 6%;
+    text-align: left;
+}
+.sous a{
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.deroulant > a::after{
+    content:"▼";
+    font-size: 0.8vw;
+}
+@media screen and (max-width: 768px){
+    .toggle-button{
+        display: flex;
+        padding: 20px 25px;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(248, 86, 86);
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+    .nav-links li{
+        padding: 12px 0px;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .image{
+        width: 40vw;
+    }
+    .sous.active{
+        display: flex;
+        position: relative;
+    }
+}
+@media screen and (max-width: 1024px){
+    .toggle-button{
+        display: flex;
+        padding: 20px 25px;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(248, 86, 86);
+        padding: 25px;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+    }
+    .nav-links li{
+        padding: 12px 0px;
+        margin-left: 5vw;
+    }
+    .nav-links li a{
+        font-size: 2vw;
+    }
+    .deroulant > a::after{
+        font-size: 1.5vw;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .image{
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    .sous.active{
+        display: flex;
+        position: relative;
+    }
+}
+
+footer{
+    background: rgb(32, 32, 32);
+    padding-top: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    margin-top: 95%;
+    }
+    .container{
+        min-width: 58%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 40.3%;
+    }
+    h3{
+        font-size: 1.6vw;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 73%;
+        margin-left: 25%;
+        padding: 3%;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+
+    .footer-content a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-content a:hover {
+        color: #ee2d2d;
+
+    }
+
+    .imgF {
+        width: 13%;
+        height: 39%;
+        margin-left: 44%;
+        border-radius: 4px;
+        -webkit-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+
+    .imgF:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    .bottom-bar{
+        background: black;
+        color: #ffffff;
+        text-align: center;
+        padding: 1% 0;
+        margin-top: 1%;
+    }
+    .bottom-bar p{
+        color: #5a5858;
+        margin: 0;
+        font-size: 1.5vw;
+        padding: 1%;
+    }

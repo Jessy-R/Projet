@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "règles.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>   
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+    
+    <h5>Les règles de sécurité des balades</h5>
+    <h6>Avant la balade</h6>
+    <ol>
+        <li>Planification de l'itinéraire :</li>
+        <ul>
+            <li>Choisir des routes appropriées pour le groupe, évitant les routes dangereuses ou très fréquentées.</li>
+            <li>Planifier des arrêts réguliers pour le repos, le ravitaillement et les vérifications de sécurité.</li>
+        </ul>
+        <li>Inspection des motos :</li>
+        <ul>
+            <li>Vérifier que votre moto est en bon état de fonctionnement (pneus, freins, éclairage, etc.).</li>
+            <li>S'assurer que vous avez une assurance valide et les documents nécessaires.</li>
+        </ul>
+        <li>Équipement de sécurité :</li>
+        <ul>
+            <li>Le port du casque est obligatoire.</li>
+            <li>Il est recommandé de porter des équipements de protection complets (gants, veste, pantalons et bottes renforcés).</li>
+        </ul>
+        <li>Communication :</li>
+        <ul>
+            <li>Informer les participants du plan de l'itinéraire et des points de rassemblement en cas de séparation.</li>
+            <li>Utiliser des dispositifs de communication</li>
+        </ul>
+        <li>Briefing avant le départ :</li>
+        <ul>
+            <li>Désigner un leader et un serre-file (fermeture) pour encadrer le groupe.</li>
+            <li>Aborder les consignes en cas d'urgence ou de panne.</li>
+        </ul>
+    </ol>
+    <h6>Pendant la balade</h6>
+    <ol>
+        <li>Formation de conduite :</li>
+        <ul>
+            <li>Rouler en quinconce pour optimiser la visibilité et la sécurité.</li>
+            <li>Maintenir une distance de sécurité suffisante entre chaque moto.</li>
+            <li>Respecter les limitations de vitesse et les règles de circulation.</li>
+        </ul>
+        <li>Signaux et communication :</li>
+        <ul>
+            <li>Utiliser des signaux manuels pour indiquer les changements de direction, les arrêts, et les dangers.</li>
+            <li>Rester vigilant et communiquer tout problème immédiatement.</li>
+        </ul>
+        <li>Gestion des arrêts :</li>
+        <ul>
+            <li>Prévoir des arrêts réguliers pour vérifier l'état des motos et des pilotes.</li>
+            <li>Ne jamais laisser un participant seul en cas de problème ; le serre-file doit rester en arrière pour s'assurer que tout le monde suit.</li>
+        </ul>
+        <li>Comportement sur la route :</li>
+        <ul>
+            <li>Ne pas se livrer à des comportements dangereux ou des compétitions de vitesse.</li>
+            <li>Être respectueux des autres usagers de la route.</li>
+        </ul>
+    </ol>
+    <h6>Après la balade</h6>
+    <ol>
+        <li>Débriefing :</li>
+        <ul>
+            <li>Discution sur la balade, des incidents éventuels et des améliorations possibles.</li>
+        </ul>
+        <li>Entretien des motos :</li>
+        <ul>
+            <li>Il est conseillé pour les participants de vérifier et entretenir leurs motos après la balade pour prévenir les pannes futures.</li>
+        </ul>
+    </ol>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

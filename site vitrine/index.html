@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "accueil.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>   
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+    <h5>Bienvenue sur le site Ducati Desmo Nord</h5>
+    <div class="slide-container">
+	
+        <div class="slides">
+            <img src="Image/img01.jpg" class="active" id="p">
+            <img src="img_évènement23/imgM2.jpg" id="p">
+            <img src="Image/img04.png" id="p">
+        </div>
+    
+        <div class="buttons">
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+        </div>
+    
+        <div class="dotsContainer">
+            <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+            <div class="dot" attr='1' onclick="switchImage(this)"></div>
+            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+	
+        // Access the Images
+        let slideImages = document.querySelectorAll('#p');
+        // Access the next and prev buttons
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        // Access the indicators
+        let dots = document.querySelectorAll('.dot');
+    
+        var counter = 0;
+    
+        // Code for next button
+        next.addEventListener('click', slideNext);
+        function slideNext(){
+        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+        if(counter >= slideImages.length-1){
+            counter = 0;
+        }
+        else{
+            counter++;
+        }
+        slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+        indicators();
+        }
+    
+        // Code for prev button
+        prev.addEventListener('click', slidePrev);
+        function slidePrev(){
+        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+        if(counter == 0){
+            counter = slideImages.length-1;
+        }
+        else{
+            counter--;
+        }
+        slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+        indicators();
+        }
+    
+        // Auto slideing
+        function autoSliding(){
+            deletInterval = setInterval(timer, 3000);
+            function timer(){
+                slideNext();
+                indicators();
+            }
+        }
+        autoSliding();
+    
+        // Stop auto sliding when mouse is over
+        const container = document.querySelector('.slide-container');
+        container.addEventListener('mouseover', function(){
+            clearInterval(deletInterval);
+        });
+    
+        // Resume sliding when mouse is out
+        container.addEventListener('mouseout', autoSliding);
+    
+        // Add and remove active class from the indicators
+        function indicators(){
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            dots[counter].className += ' active';
+        }
+    
+        // Add click event to the indicator
+        function switchImage(currentImage){
+            currentImage.classList.add('active');
+            var imageId = currentImage.getAttribute('attr');
+            if(imageId > counter){
+            slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+            counter = imageId;
+            slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+            }
+            else if(imageId == counter){
+                return;
+            }
+            else{
+            slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+            counter = imageId;
+            slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';	
+            }
+            indicators();
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

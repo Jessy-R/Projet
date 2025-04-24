@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "bureau.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>    
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+
+    <h5>Présentation du bureau du DDN</h5>
+
+    <div class="wrapper">
+        <img class="photo" src="img_bureau/président.jpeg" alt="">
+        <div class="text-box">
+            <br>
+            <h3>Président du DDN</h3>
+            <p>Prénom : Romain</p>
+            <p>Surnom : Papanne</p>
+            <p>Âge : 37 ans</p>
+            <p>Profession : Ingénieur travaux neufs</p>
+            <p>Hobbies : VTT, moto piste, moto cross</p>
+            <p>Machines : <a target="_blank" href="img_bureau/moto1.jpeg">800 monster</a> ; tamburini troy bayliss </p>
+            <br>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <img class="photo2" src="img_bureau/personne2.jpg" alt="">
+        <div class="text-box">
+            <br>
+            <h3>Membre du DDN</h3>
+            <p>Prénom : Guillaume</p>
+            <p>Âge : 40 ans</p>
+            <p>Profession : Chefs des ventes</p>
+            <p>Hobbies : Mécanique, Bricolage, Musique</p>
+            <p>Machines : S4RS; 999; S2R 800</p>
+            <br>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <img class="photo" src="img_bureau/personne3.jpg" alt="">
+        <div class="text-box">
+            <br>
+            <h3>Membre du DDN</h3>
+            <p>Prénom : Nicolas</p>
+            <p>Surnom : Niko</p>
+            <p>Âge : 41 ans</p>
+            <p>Profession : Technico commercial</p>
+            <p>Hobbies : VTT compétition, balades</p>
+            <p>Machine : Monster 1100S full barouf</p>
+            <br>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <img class="photo3" src="img_bureau/personne4.jpg" alt="">
+        <div class="text-box">
+            <br>
+            <h3>Membre du DDN</h3>
+            <p>Prénom : Jérôme</p>
+            <p>Surnom : Jay</p>
+            <p>Âge : 49 ans</p>
+            <p>Profession : Ingénieurs chez Alstom</p>
+            <p>Hobbies : Pella, allumettes, musique</p>
+            <p>Machines : 620ie,2R1000,900superlight,S4RS,750supersport,monster821</p>
+            <br>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

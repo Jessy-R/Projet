@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "association.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>   
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+
+    <h5>L'Association DDN</h5>
+    <div class="wrapper">
+        <br>
+        <p>Ce groupe a été crée d'une part pour rassembler les Ducatistes du nord pas de calais, pour organiser des balades, des randos ,sortie piste etc....VIA le premier FORUM DUCATI DU NORD</p>
+        <p>En vue de ce projet, ducati qui est une marque à part, une marque très fermée à un groupe de motard orienté Ducati et que ducati. Les ducatistes restent souvent sur leurs choix d'une part pour la spécificité des machines et par sa mécanique unique. une sorte de monde parallèle à tout autres marques mais bien à elle et propre à elle.</p>
+        <p>Amis Ducatistes je vous invite à faire de ce groupe le plus grand réseau DUCATI du nord pas de calais pour faire entendre la marque mais surtout notre bruit bien particulier lors de nos sorties organisées. Mais pour faire trembler le macadam au nom de Ducati il faut ce regrouper.</p>
+        <p>Alors regroupons nous et faisons du bruit sur les routes du nord!</p>
+        <p>Bien sur nous acceptons aussi d'autres marques italienne comme Benelli, MV Agusta et Aprilia qui ont aussi leurs spécificités et qu'ils ont les mêmes origines.</p>
+        <p>Télécharger le bulletin d'adhésion en cliquant sur le logo :</p><a target="_blank" href="Image/inscription-1.pdf" download="inscription-1.pdf"><img src="Image/imgddn.png"></a>
+        <br>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+                
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

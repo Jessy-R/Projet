@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "évènements24.css" rel = "stylesheet">
+<link rel="shortcut icon" href="Image/logoDDN.png">
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducati Desmo Nord</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><i>DUCATI DESMO NORD</i></div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="bureau.html">Bureau</a></li>
+                <li class="deroulant" id="deroulant"><a href="#">Événements</a>
+                    <ul class="sous" id="sous">
+                        <li><a href="évènements24.html">Année2024</a></li>
+                        <li><a href="évènements23.html">Année2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="sécurité.html">Régles</a></li>   
+            </ul>
+            <img class="image" src="Image/logoDDN.png" alt="">
+        </div>
+        <script type="text/javascript">
+            const toggleButton = document.getElementById('toggleButton');
+            const navLinks = document.getElementById('navLinks');
+    
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            const Deroulant = document.getElementById('deroulant')
+            const Sous = document.getElementById('sous');
+            Deroulant.addEventListener('click', () => {
+                Sous.classList.toggle('active');
+            })
+        </script>
+    </header>
+
+    <h5>Événements de l'année 2024</h5>
+    <h6>Balade du 19 Mai</h6>
+    <a target="_blank" href="img_évènement/imgP1.jpg"><img class="img1" src="img_évènement/imgP1.jpg"/></a><a target="_blank" href="img_évènement/img19M.jpg"><img class="img2" src="img_évènement/img19M.jpg"/></a>
+    <h2>Arrivée des t-shirts le 18 Avril</h2>
+    <a target="_blank" href="img_évènement/imgV1.jpg"><img class="img3" src="img_évènement/imgV1.jpg"/></a><a target="_blank" href="img_évènement/imgV2.jpg"><img class="img3" src="img_évènement/imgV2.jpg"/></a><a target="_blank" href="img_évènement/imgV3.jpg"><img class="img3" src="img_évènement/imgV3.jpg"/></a>
+    <h2>Balade du 14 Avril</h2>
+    <a target="_blank" href="img_évènement/imgA1.jpg"><img class="img3" src="img_évènement/imgA1.jpg"/><video class="video1" controls><source src="img_évènement/vidéo.mp4" type="video/mp4" /></video></a><a target="_blank" href="img_évènement/imgA2.jpg"><img class="img3" src="img_évènement/imgA2.jpg"/></a>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactez-nous</h3>
+                <p>Email : <a id="mail" href="mailto:ducatidesmonord@laposte.net">ducatidesmonord@laposte.net</a></a></p>
+            </div>
+            <div class="footer-content">
+                <a href="cgu.html"><h3>Conditions générales d'utilisation</h3></a>
+                <img class="imgF" src="Image/italien.jpg"/>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez-nous</h3>
+                <a target="_blank" href="https://www.facebook.com/groups/ducatidesmonord/?locale=fr_FR"><img class="imgF" src="Image/facebook.jpg"/></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © Tous droit réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
